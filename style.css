@@ -1,0 +1,103 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 40vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@media (max-width: 500px) {
+  #bg-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    font-weight: 700;
+  }
+  .content p {
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+  }
+
+  .content b {
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  .content {
+    padding: 0 20px;
+    margin-top: 40vh;
+    text-align: center;
+  }
+}
+
+/* TRANSLATE BUTTON */
+.lang-switch {
+  position: fixed;
+  top: 620px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.lang-switch button {
+  padding: 2px 3.5px;
+  border: none;
+  border-radius: 2px;
+  background: rgba(248, 203, 7, 0.6);
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  transition: 0.2s;
+}
+
+.lang-switch button:hover {
+  background: rgba(255, 244, 194, 0.8);
+}
+
+/* LIEN EMAIL */
+.email-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
