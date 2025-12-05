@@ -58,7 +58,7 @@ html {
   }
   .content {
     padding: 0 20px;
-    margin-top: 40vh;
+    margin-top: 37vh;
     text-align: center;
   }
 }
@@ -86,6 +86,7 @@ html {
   font-weight: 600;
   font-size: 0.7rem;
   transition: 0.2s;
+  color: rgb(0, 0, 0);
 
   display: flex; /* pour centrer EN / FR */
   align-items: center;
