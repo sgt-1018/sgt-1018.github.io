@@ -35,5 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("switch-en").onclick = () => setLanguage("en");
 
   // Default language
-  setLanguage("en");
+  setLanguage("fr");
 });
